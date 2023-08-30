@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Practice Schedule</title>
+    <link rel="stylesheet" href="Achievements.css">
+</head>
+<body>
+  <header>
+    <nav class="bar">
+      <img id="logo" src="Band logo1.png" height="6%" width="6%">
+        <div class="name">CCHM Concert Band</div>
+        <a href="#" class="toggle">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </a>
+        <div class="pages">
+          <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Achievements.html"><u>Our Achievements</u></a></li>
+            <li><a href="timetable.html">Schedule</a></li>
+          </ul>
+        </div>
+      </nav>
+</header>
+<script>
+    const toggleButton = document.getElementsByClassName('toggle')[0]
+    const navbarLinks = document.getElementsByClassName('pages')[0]
+    toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+})
+</script>
+    <h1>Hall Of Fame</h1>
+      <img id="image2" src="Bandpic2.jpg" height="30%" width="30%"/>
+      <br>
+      <main>
+        <table border="2">
+          <caption><b>Our Achievements</b></caption>
+            <tr>
+              <th>Singapore Youth Festival Awards Presentation</th>
+              <th>Year</th>
+            </tr>
+          <tbody>
+            <tr>
+              <td>Certificate Of <span>Distinction</span></td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Certificate Of <span>Distinction</span></td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>Certificate Of <span>Accomplishment</span></td>
+              <td>2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+      <br>
+      <footer>
+        <a href="https://instagram.com/cchm_concertband?igshid=MzRlODBiNWFlZA=="><img id='social' src="instagram3.png" height="3%" width="3%"></a>
+        <p>&copy; CCHM Concert Band 2023</p>
+      </footer>
+</body>
+</html>

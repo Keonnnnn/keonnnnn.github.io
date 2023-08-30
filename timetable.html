@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Practice Schedule</title>
+    <link rel="stylesheet" href="timetable.css">
+</head>
+<body>
+  <header>
+    <nav class="bar">
+      <img id="logo" src="Band logo1.png" height="6%" width="6%">
+        <div class="name">CCHM Concert Band</div>
+        <a href="#" class="toggle">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </a>
+        <div class="pages">
+          <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Achievements.html">Our Achievements</a></li>
+            <li><a href="timetable.html"><u>Schedule</u></a></li>
+          </ul>
+        </div>
+      </nav>
+</header>
+<script>
+    const toggleButton = document.getElementsByClassName('toggle')[0]
+    const navbarLinks = document.getElementsByClassName('pages')[0]
+    toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+})
+</script>
+      <main>
+        <h1>Band Schedule</h1>
+        <table border="2">
+          <caption><b>Practice Schedule</b></caption>
+            <tr>
+              <th>Day</th>
+              <td>Monday</td>
+              <td>Wednesday</td>
+              <td>Friday</td>
+            </tr>
+          <tbody>
+            <tr>
+              <th>Time</th>
+              <td>2pm-6.30pm</td>
+              <td>3pm-6.30pm</td>
+              <td>3pm-6.30pm</td>
+            </tr>
+            <tr>
+              <th>Details</th>
+              <td>Jamming session</td>
+              <td>Combined practice</td>
+              <td>Sectionals</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <br>
+        <table border="2">
+          <caption><b>Performance Schedule</b></caption>
+          <tr>
+            <th>Key Events</th>
+            <td>Singapore Youth Festival</td>
+            <td>Arts Fest</td>
+            <td>Open House</td>
+          </tr>
+          <tr>
+            <th>Us in Action!</th>
+            <td><img id="one" src="Bandpic1.jpg" alt="SYF 2021" width='250' height='370'></td> 
+            <td><img id='two' src="Artsfest3.JPG" alt="ArtsFest 2022" width='100%' height='100%'></td> 
+            <td><img id='three' src="Perf2.JPG" alt="ArtsFest 2022" width='100%' height='100%'></td> 
+          </tr>
+        </table>
+      </main>
+      <footer>
+        <a href="https://instagram.com/cchm_concertband?igshid=MzRlODBiNWFlZA=="><img id='social' src="instagram3.png" height="3%" width="3%"></a>
+        <p>&copy; CCHM Concert Band 2023</p>
+      </footer>
+</body>
+</html>

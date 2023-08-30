@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="about.css">
+</head>
+<body>
+	<header>
+        <nav class="bar">
+			<img id="logo" src="Band logo1.png" height="6%" width="6%">
+            <div class="name">CCHM Concert Band</div>
+            <a href="#" class="toggle">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </a>
+            <div class="pages">
+              <ul>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="about.html"><u>About Us</u></a></li>
+                <li><a href="Achievements.html">Our Achievements</a></li>
+                <li><a href="timetable.html">Schedule</a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle')[0]
+        const navbarLinks = document.getElementsByClassName('pages')[0]
+        toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+})
+    </script>
+	<div id="container">
+	<h1>About Us</h1>
+    <img id='image' src="Main4.jpg" height="50%" width="50%"/>
+	<br>
+	<p>Our Concert Band consists of a group of students who are passionate about music and have developed outstanding characters through their hard work and dedication. With the combined effort of teachers, conductors, and student leaders, the CCA has grown in size and strength over the years. Our Band takes pride in its strong discipline culture, and all students work relentlessly towards every performance, putting in their best effort evident in intensive rehearsals. The mission of our CCA is to ignite the passion for music, grow more musical talents, and develop outstanding characters. Apart from school performances and the Singapore Youth Festival (SYF) competition, our Band also contributes to the community by putting up annual National Day performances for the residents of Mountbatten and Dakota. If you're looking for a group of talented and dedicated musicians who are passionate about music and community service, then our Concert Band CCA is the perfect choice for you.</p>
+    </div>
+	<hr>
+	<main>
+	<section class="session">
+			<h2>Practice Sessions</h2>
+			<ul>
+				<li>
+					<h3>Sectionals</h3>
+					<img src="Sectionals.JPG" height="80%" width="80%">
+					<p>Sectionals are a vital part of a quality band. Band members gather in their respective sections to practice individual parts and help one another to improve on difficult sections of a piece.</p>
+				</li>
+				<li>
+					<h3>Combined</h3>
+					<img src="Combined.JPG" height="80%" width="80%">
+					<p>All sections in the band come together to practice a piece. The conductor ensures all the sections are synchronised and making music as a team.</p>
+				</li>
+				<li>
+					<h3>Jamming</h3>
+					<img src="team2.JPG" height="80%" width="80%">
+				    <p>Band members are welcome to play any instrument from any section and come together to make music freely. They can nurture their passion and enhance their interest in Music.</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<a href="https://instagram.com/cchm_concertband?igshid=MzRlODBiNWFlZA=="><img id='social' src="instagram3.png" height="3%" width="3%"></a>
+		<p><span>&copy; CCHM Concert Band 2023</p></span>
+	</footer>
+</body>
+</html>

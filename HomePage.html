@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HomePage.css">
+    <title>CCHM Concert Band</title>
+    <header>
+        <nav class="bar">
+            <img id="logo" src="Band logo1.png" height="6%" width="6%">
+            <div class="name">CCHM Concert Band</div>
+            <a href="#" class="toggle">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </a>
+            <div class="pages">
+              <ul>
+                <li><a href="HomePage.html"><u>Home</u></a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Achievements.html">Our Achievements</a></li>
+                <li><a href="timetable.html">Schedule</a></li>
+              </ul>
+            </div>
+            <!-- <a id='social' href="https://instagram.com/cchm_concertband?igshid=MzRlODBiNWFlZA=="><img src="instagram3.png" height="3%" width="3%"> -->
+          </nav>
+    </header>
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle')[0]
+        const navbarLinks = document.getElementsByClassName('pages')[0]
+        toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+})
+    </script>
+</head>
+<body>
+    <main>
+    <div id="image">
+      <div class="text">Join us today!</div>
+      <div class="text2"><a href='SignUpFORM.html'><p>Click >> <span id='cool'>Here</span> << To Join</p></a></div>
+      <img src="Artsfest2.JPG" height="50%" width="50%">
+    </div>
+    </main>
+    <footer>
+      <a href="https://instagram.com/cchm_concertband?igshid=MzRlODBiNWFlZA=="><img id='social' src="instagram3.png" height="3%" width="3%"></a>
+        <p>&copy; CCHM Concert Band 2023</p>
+    </footer>
+    </body>
+</html>

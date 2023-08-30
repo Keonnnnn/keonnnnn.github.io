@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SignUpFORM.css">
+    <script type="text/javascript" src='SignUpFORM.js'></script>
+    <title>Application</title>
+    <h1>Join our Band Family!</h1>
+    <h2>Where words fail, 
+        <span>M</span>
+        <span>U</span>
+        <span>S</span>
+        <span>I</span>
+        <span>C</span>
+        <span></span>
+        <span>S</span>
+        <span>P</span>
+        <span>E</span>
+        <span>A</span>
+        <span>K</span>
+        <span>S</span> 
+        <span>!</span>
+    </h2>
+    <br>
+    <div id="image">
+    <img src="Artsfest3.JPG" width="42%" height="42%">
+    </div>
+</head>
+<body>
+    <form action="submit.html" method="POST">
+        <fieldset>
+            <legend><u>Personal Particulars</u></legend>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required />
+            <p>
+                <label class="inline" for="male">Male<input type="radio" id="gender" name="gender" value="Male" required /></label>
+                <label class="inline" for="female">Female<input type="radio" id="gender" name="gender" value="Female"  /></label>
+            </p>
+            <label for='class'>Form Class:</label>
+            <br>
+            <select id="formclass">
+                <option>Loyalty</option>
+                <option>Empathy</option>
+                <option>Courage</option>
+                <option>Diligence</option>
+                <option>Harmony</option>
+                <option>Integrity</option>
+                <option>Benevolence</option>
+                </select>
+            <br>
+            <br>
+            <input type="email" id="email" name="email" placeholder="iCON Email" title="name@students.edu.sg" required />
+            <br>
+            <input type="text" id="number" name="number" placeholder="Phone Number" title="Please input an 8-digit phone number" pattern="\d{8}" required />
+        </fieldset>
+        <fieldset>
+            <br>
+            <legend><u>Music Background</u></legend>
+            <label for='band'>Band Experience:</label>
+            <br>
+            <select id="BandExperience">
+                <option>0 Years</option>
+                <option>1-2 Years</option>
+                <option>3-4 Years</option>
+                <option>More than 5 Years</option>
+            </select>
+            <br>
+            <br>
+            <textarea id="background" name="background" placeholder='Instrument that you can play (Music Grade)' required></textarea>
+            <br>
+            <label for='preference'>Prefered Section:</label>
+            <br>
+            <select id="section">
+                <option selected>Percussion</option>
+                <option>Trombone</option>
+                <option>French Horn</option>
+                <option>Clarinet</option>
+                <option>French Horn</option>
+                <option>Bass</option>
+                <option>Euphonium</option>
+                <option>Tuba</option>
+            </select>
+            <br>
+            <br>
+            <textarea id="reason" placeholder="Why do you want to Join Band? (100 words)" required></textarea>
+        </fieldset>
+        <input type="submit" id="submit" onclick="handleSubmit()"/>
+        <input type="reset" id="reset" name="reset"/>
+    </form>
+</body>
+</html>
